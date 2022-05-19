@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: gray;
+    font-family: 'Epilogue', sans-serif;
+}
+
+html, body{
+    min-height: 100%;
+}
+
+.mobile{
+    display: none;
+}
+
+.desktop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+}
+
+#features, #company, nav li{
+    cursor: pointer;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 30px;
+    position: relative;
+    transition: color 300ms;
+}
+
+.nav-menu li:hover{
+    color: black;
+}
+
+.nav-menu ul{
+    position: absolute;
+    padding: 20px;
+    display: none;
+    line-height: 1.6;
+    list-style-type: none;
+    transform: translateX(-10%);
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    text-align: left;
+}
+
+#featuresList li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-register{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.login-register li:hover{
+    color: black;
+}
+
+.login-register button{
+    padding: 15px;
+    border: 2px solid gray;
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+
+    transition: all 300ms;
+}
+
+.login-register button:hover{
+    border-color: black;
+    color: black;
+}
+
+main{
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main-text h1{
+    color: black;
+    font-size: 5rem;
+}
+
+.main-text p{
+    width: 70%;
+    font-size: 18px;
+}
+
+.main-text button{
+    padding: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    width: fit-content;
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 15px;
+    cursor: pointer;
+
+    transition: all 300ms;
+}
+
+.main-text button:hover{
+    color: black;
+    border-color: black;
+    background-color: white;
+}
+
+.main-image{
+    width: 40%;
+}
+
+.main-clients{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1080px){
+    main{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .main-image{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 935px){
+    .main-image{
+        width: 45%;
+    }
+}
+
+/* -----------------MOBILE VERSION------------------------- */
+
+@media screen and (max-width: 768px){
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        gap: 20px;
+    }
+
+    .mobile-main-image{
+        width: 100%;
+    }
+
+    .menu-screen{
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        justify-content: right;
+    }
+
+    #closeMenu{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .mobile-menu{
+        background-color: white;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 20%;
+        gap: 20px;
+    }
+
+    .mobile-nav-menu, #mobileFeaturesList, #mobileCompanyList, .mobile-login-register{
+        list-style-type: none;
+    }
+
+    .mobile-nav-menu{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #mobileFeaturesList, #mobileCompanyList{
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    #mobileFeaturesList li{
+        display: flex;
+        gap: 10px;
+    }
+
+    .mobile-login-register{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mobile-login-register button{
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: white;
+        border: 2px solid gray;
+        font-size: 1rem;
+        border-radius: 12px;
+    }
+
+    .mobile-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .mobile h1{
+        color: black;
+    }
+
+    .mobile p{
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    .mobile button{
+        background-color: black;
+        color: white;
+        border: 2px solid white;
+        font-size: 1rem;
+        padding: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 15px;
+    }
+
+    .mobile-clients{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .mobile-clients img{
+        width: 70px;
+    }
+}
