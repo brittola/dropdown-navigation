@@ -8,6 +8,7 @@ function showFeatures() {
         featuresList.style.display = 'block';
         document.getElementById('featuresArrow').setAttribute('src', './assets/icon-arrow-up.svg');
         companyList.style.display = 'none';
+        document.getElementById('companyArrow').setAttribute('src', './assets/icon-arrow-down.svg');
     }else{
         featuresList.style.display = 'none';
         document.getElementById('featuresArrow').setAttribute('src', './assets/icon-arrow-down.svg');
@@ -19,6 +20,7 @@ function showCompany() {
         companyList.style.display = 'block';
         document.getElementById('companyArrow').setAttribute('src', './assets/icon-arrow-up.svg');
         featuresList.style.display = 'none';
+        document.getElementById('featuresArrow').setAttribute('src', './assets/icon-arrow-down.svg');
     }else{
         companyList.style.display = 'none';
         document.getElementById('companyArrow').setAttribute('src', './assets/icon-arrow-down.svg');
