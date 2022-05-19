@@ -2,36 +2,38 @@ let features = document.getElementById('features');
 let featuresList = document.getElementById('featuresList');
 let company = document.getElementById('company');
 let companyList = document.getElementById('companyList');
+let featuresArrow = document.getElementById('featuresArrow');
+let companyArrow = document.getElementById('companyArrow');
 
 function showFeatures() {
     if(featuresList.style.display == '' || featuresList.style.display == 'none'){
         featuresList.style.display = 'block';
-        document.getElementById('featuresArrow').setAttribute('src', './assets/icon-arrow-up.svg');
+        featuresArrow.setAttribute('src', './assets/icon-arrow-up.svg');
         companyList.style.display = 'none';
-        document.getElementById('companyArrow').setAttribute('src', './assets/icon-arrow-down.svg');
+        companyArrow.setAttribute('src', './assets/icon-arrow-down.svg');
     }else{
         featuresList.style.display = 'none';
-        document.getElementById('featuresArrow').setAttribute('src', './assets/icon-arrow-down.svg');
+        featuresArrow.setAttribute('src', './assets/icon-arrow-down.svg');
     }
 }
 
 function showCompany() {
     if(companyList.style.display == '' || companyList.style.display == 'none'){
         companyList.style.display = 'block';
-        document.getElementById('companyArrow').setAttribute('src', './assets/icon-arrow-up.svg');
+        companyArrow.setAttribute('src', './assets/icon-arrow-up.svg');
         featuresList.style.display = 'none';
-        document.getElementById('featuresArrow').setAttribute('src', './assets/icon-arrow-down.svg');
+        featuresArrow.setAttribute('src', './assets/icon-arrow-down.svg');
     }else{
         companyList.style.display = 'none';
-        document.getElementById('companyArrow').setAttribute('src', './assets/icon-arrow-down.svg');
+        companyArrow.setAttribute('src', './assets/icon-arrow-down.svg');
     }
 }
 
 function hideMenus(){
     featuresList.style.display = 'none';
-    document.getElementById('featuresArrow').setAttribute('src', './assets/icon-arrow-down.svg');
+    featuresArrow.setAttribute('src', './assets/icon-arrow-down.svg');
     companyList.style.display = 'none';
-    document.getElementById('companyArrow').setAttribute('src', './assets/icon-arrow-down.svg');
+    companyArrow.setAttribute('src', './assets/icon-arrow-down.svg');
 }
 
 features.addEventListener('click', showFeatures);
@@ -49,6 +51,8 @@ let mobileFeatures = document.getElementById('mobileFeatures');
 let mobileFeaturesList = document.getElementById('mobileFeaturesList');
 let mobileCompany = document.getElementById('mobileCompany');
 let mobileCompanyList = document.getElementById('mobileCompanyList');
+let mobileFeaturesArrow = document.getElementById('mobileFeaturesArrow');
+let mobileCompanyArrow = document.getElementById('mobileCompanyArrow');
 let openMenu = document.getElementById('openMenu');
 let closeMenu = document.getElementById('closeMenu');
 
@@ -63,20 +67,20 @@ function hideMenu(){
 function showMobileFeatures(){
     if(mobileFeaturesList.style.display == '' || mobileFeaturesList.style.display == 'none'){
         mobileFeaturesList.style.display = 'flex';
-        document.getElementById('mobileFeaturesArrow').setAttribute('src', './assets/icon-arrow-up.svg');
+        mobileFeaturesArrow.setAttribute('src', './assets/icon-arrow-up.svg');
     }else{
         mobileFeaturesList.style.display = 'none';
-        document.getElementById('mobileFeaturesArrow').setAttribute('src', './assets/icon-arrow-down.svg');
+        mobileFeaturesArrow.setAttribute('src', './assets/icon-arrow-down.svg');
     }
 }
 
 function showMobileCompany(){
     if(mobileCompanyList.style.display == '' || mobileCompanyList.style.display == 'none'){
         mobileCompanyList.style.display = 'flex';
-        document.getElementById('mobileCompanyArrow').setAttribute('src', './assets/icon-arrow-up.svg');
+        mobileCompanyArrow.setAttribute('src', './assets/icon-arrow-up.svg');
     }else{
         mobileCompanyList.style.display = 'none';
-        document.getElementById('mobileCompanyArrow').setAttribute('src', './assets/icon-arrow-down.svg');
+        mobileCompanyArrow.setAttribute('src', './assets/icon-arrow-down.svg');
     }
 }
 
