@@ -2,8 +2,8 @@
 Intro section with dropdown navigation challenge from Frontend Mentor website.
 
 ## ----------------- How it works: -------------------
-- This project is a simple responsive page with HTML, CSS and Javascript with a bit of JQuery;
-- The objective was to create a dropdown navigation bar animated with JQuery slideUp and slideDown;
+- This project is a simple responsive page with HTML, CSS and Javascript with JQuery;
+- The objective was to create a dropdown navigation bar animated which I did with JQuery slideUp and slideDown;
 
 ## -------- What i learned with this project: --------
 - How to make the dropdown navigation bar and showing different HTML layouts based on screen width, so the HTML is divided in two sections: desktop and mobile;
