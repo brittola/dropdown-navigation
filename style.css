@@ -176,7 +176,7 @@ main{
 
 /* -----------------MOBILE VERSION------------------------- */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 760px){
     .desktop{
         display: none;
     }
@@ -212,13 +212,14 @@ main{
 
     .mobile-menu{
         background-color: white;
-        width: 50%;
+        width: 70%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
         padding-top: 20%;
         gap: 20px;
+        font-size: 1.2rem;
     }
 
     .mobile-nav-menu, #mobileFeaturesList, #mobileCompanyList, .mobile-login-register{
@@ -235,15 +236,19 @@ main{
     #mobileFeaturesList, #mobileCompanyList{
         display: none;
         flex-direction: column;
-        gap: 10px;
         padding-top: 10px;
-        font-size: 13px;
+        font-size: 1rem;
     }
     
     #mobileFeaturesList li{
         display: flex;
         align-items: center;
         gap: 5px;
+        padding-top: 5px;
+    }
+
+    #mobileCompanyList li{
+        padding-top: 5px;
     }
 
     .mobile-login-register{
